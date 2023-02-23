@@ -257,27 +257,3 @@ def detect_similar_monthly_variations(time_series, years):
     
     return lista_confronto
         
-    
-
-    
-    
-
-
-time_series_file = CSVTimeSeriesFile(name='data.csv')
-time_series = time_series_file.get_data()
-
-lista_confronto=detect_similar_monthly_variations(time_series,["1949","1950"])
-
-
-
-
-for item in time_series:
-    print(item)
-    #for x in item:
-        #print(type(x),end=" ")
-    print()
-
-for item in lista_confronto:
-    print(item)
-    
-    print()
